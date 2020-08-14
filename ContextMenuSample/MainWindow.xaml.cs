@@ -23,6 +23,9 @@ namespace ContextMenuSample
         public MainWindow()
         {
             InitializeComponent();
+            string path = (Application.Current as App).FilePath;
+            txtFilePath.Text = path;
         }
+
     }
 }

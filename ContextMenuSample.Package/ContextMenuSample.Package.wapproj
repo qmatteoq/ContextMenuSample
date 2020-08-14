@@ -56,12 +56,13 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <EntryPointProjectUniqueName>..\ContextMenuSample\ContextMenuSample.csproj</EntryPointProjectUniqueName>
-    <PackageCertificateThumbprint>197A511FDFA0014BC16B115980E78142D02D90AA</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>7F0254FEC8E115DD807FEAA8553D3953E7B770E7</PackageCertificateThumbprint>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <PackageCertificateKeyFile>ContextMenuSample.Package_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <AppxBundle>Never</AppxBundle>
@@ -99,6 +100,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ContextMenuSample.Package_TemporaryKey.pfx" />
     <Content Include="ExplorerCommandVerb.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

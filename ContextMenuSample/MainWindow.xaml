@@ -6,11 +6,16 @@
         xmlns:local="clr-namespace:ContextMenuSample"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
         <TextBlock Text="This is a sample application that registers a context menu"
                    FontSize="30"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    />
-    </Grid>
+
+        <TextBlock x:Name="txtFilePath"
+                   FontSize="22" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+    </StackPanel>
 </Window>
